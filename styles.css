@@ -1,0 +1,412 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff8c00;
+}
+
+.hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e07e00;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+    background-color: #000;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilo único para las secciones específicas */
+#acerca,
+#eventos,
+#promociones {
+    background-color: #ff8c00; /* Fondo naranja */
+    color: #fff; /* Texto blanco */
+    padding: 10px 0;
+}
+
+#tiendas,
+#noticias {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px 0;
+}
+
+#acerca h2,
+#tiendas h2,
+#eventos h2,
+#noticias h2,
+#promociones h2 {
+    color: #fff; /* Texto blanco */
+    padding: 10px 0; /* Reducir espacio en cada sección */
+    text-align: center;
+}
+
+#acerca p,
+#tiendas p,
+#eventos p,
+#noticias p,
+#promociones p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#acerca .container,
+#tiendas .container,
+#eventos .container,
+#noticias .container,
+#promociones .container {
+    text-align: center;
+}
+
+#acerca::before,
+#tiendas::before,
+#eventos::before,
+#noticias::before,
+#promociones::before {
+    content: '\2022';
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Efecto hover para los íconos de viñetas */
+#acerca:hover::before,
+#tiendas:hover::before,
+#eventos:hover::before,
+#noticias:hover::before,
+#promociones:hover::before {
+    transform: rotate(180deg); /* Rotación de 180 grados al pasar el mouse */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: '\2022';
+    color: #ff8c00;
+    font-size: 20px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#tu-lugar {
+    background-color: #000; /* Fondo negro para contrastar */
+    color: #fff; /* Texto blanco */
+    padding: 80px 0; /* Espaciado */
+    text-align: center;
+}
+
+#tu-lugar h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.featured-clients {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.client {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.client img {
+    max-width: 100%;
+    border-radius: 5px; /* Agregar border radius */
+}
+
+.client p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #ff8c00; /* Fondo negro para contrastar */
+    color: #000; /* Texto blanco */
+    text-align: center;
+    padding: 20px 0; /* Espaciado */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-info p {
+    margin-bottom: 5px;
+}
+
+#renta {
+    background-color: #000; /* Fondo negro para contrastar */
+    color: #fff; /* Texto blanco */
+    padding: 80px 0; /* Espaciado */
+    text-align: center;
+}
+
+#renta h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#renta p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#renta .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff8c00; /* Color naranja para resaltar */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#renta .cta-button:hover {
+    background-color: #e07e00; /* Cambio de color al pasar el mouse */
+}
+
+#facilidades {
+    background-color: #ff8c00; /* Fondo naranja para resaltar */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado */
+    text-align: center;
+}
+
+#facilidades h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#facilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#facilidades li {
+    font-size: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#facilidades .seguridad::before {
+    content: '\1F6A8'; /* Icono de alarma para representar seguridad */
+}
+
+#facilidades .ubicacion::before {
+    content: '\1F4CD'; /* Icono de mapa para representar ubicación */
+}
+
+#facilidades .respaldo::before {
+    content: '\1F50B'; /* Icono de enchufe para representar respaldo eléctrico */
+}
+
+#facilidades .wifi::before {
+    content: '\1F4F6'; /* Icono de señal de wifi para representar conexión inalámbrica */
+}
+
+#facilidades .cafeteria::before {
+    content: '\1F6CD'; /* Icono de taza de café para representar cafetería */
+}
+
+#facilidades .parqueo::before {
+    content: '\1F697'; /* Icono de automóvil para representar estacionamiento */
+}
+
+#faq {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    padding: 80px 0;
+}
+
+#faq h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000; /* Color negro para el título */
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff8c00; /* Color naranja para las preguntas */
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #333; /* Color gris oscuro para las respuestas */
+}
+
+#contacto {
+    background-color: #000; /* Fondo negro para contrastar */
+    color: #fff; /* Texto blanco */
+    padding: 80px 0; /* Espaciado */
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #e07e00;
+}
